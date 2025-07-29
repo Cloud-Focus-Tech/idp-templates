@@ -1,0 +1,8 @@
+apiVersion: backstage.io/v1alpha1
+kind: Location
+metadata:
+  name: templates-root
+  description: All Backstage software templates for the company
+spec:
+  targets:
+    - ./azure-rg.yaml
