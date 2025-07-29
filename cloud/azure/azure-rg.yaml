@@ -1,0 +1,39 @@
+apiVersion: scaffolder.backstage.io/v1beta3
+kind: Template
+metadata:
+  name: azure-resource-group
+  title: Azure Resource Group
+  description: Creates a new Azure Resource Group using Azure CLI.
+spec:
+  owner: platform-team
+  type: infrastructure
+
+  parameters:
+    - title: Resource Group Details
+      required:
+        - resourceGroupName
+        - location
+      properties:
+        resourceGroupName:
+          type: string
+          title: Resource Group Name
+          description: The name for the new Azure Resource Group.
+        location:
+          type: string
+          title: Azure Region
+          description: Azure location (e.g. eastus, westus, etc.)
+          default: eastus
+
+  steps:
+    - id: create-resource-group
+      name: Create Azure Resource Group
+      action: azure:cli
+      input:
+        azcliversion: 2.20.0
+        script: |
+          az group create --name ${{ parameters.resourceGroupName }} --location ${{ parameters.location }}
+
+  output:
+    links:
+      - title: Azure Portal
+        url: https://portal.azure.com/
