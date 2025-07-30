@@ -7,7 +7,7 @@ metadata:
 spec:
   type: other
   lifecycle: unknown
-  owner: admin
+  owner: group:admin
 ---
 apiVersion: backstage.io/v1alpha1
 kind: Location
@@ -17,3 +17,4 @@ metadata:
 spec:
   targets:
   - ./templates/azure-rg.yaml
+  - ./templates/hello-world.yaml
