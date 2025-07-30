@@ -17,4 +17,4 @@ metadata:
 spec:
   targets:
   - ./templates/azure-rg.yaml
-  - ./templates/hello-world.yaml
+  - templates/hello-world.yaml
