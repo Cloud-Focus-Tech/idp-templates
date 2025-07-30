@@ -8,5 +8,12 @@ spec:
   type: other
   lifecycle: unknown
   owner: admin
+---
+apiVersion: backstage.io/v1alpha1
+kind: Location
+metadata:
+  name: templates-root
+  description: All Backstage software templates for the company
+spec:
   targets:
   - ./templates/azure-rg.yaml
