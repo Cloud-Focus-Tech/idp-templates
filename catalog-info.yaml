@@ -8,3 +8,5 @@ spec:
   type: other
   lifecycle: unknown
   owner: admin
+  targets:
+  - ./templates/azure-rg.yaml
