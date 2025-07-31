@@ -4,7 +4,6 @@ metadata:
   name: idp-templates
   description: All Backstage software templates for the company
 spec:
-  type: template
   targets:
-  - ./templates/azure-rg.yaml
-  - ./templates/hello-world.yaml
+  - ./templates/azure-rg-template/template.yaml
+  - ./templates/hello-world-template/template.yaml
