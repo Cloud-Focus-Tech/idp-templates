@@ -22,9 +22,4 @@ spec:
       input:
         url: ./skeleton
         values:
-          name: ${{ parameters.name }}
-  output:
-    links:
-      - url: ${{ steps['fetch'].output.target }}
-        title: Repo
-        
+          name: ${{ parameters.name }}       
