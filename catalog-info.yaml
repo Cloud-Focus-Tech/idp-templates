@@ -5,4 +5,5 @@ metadata:
   description: All Backstage software templates for the company
 spec:
   targets:
-  - ./templates/hello-world/template.yaml
+  - ./templates/*/template.yaml
+  type: template
