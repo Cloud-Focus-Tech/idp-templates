@@ -5,7 +5,7 @@ metadata:
   title: Hello World Template
   description: A minimal test template to validate Backstage scaffolder setup.
 spec:
-  owner: guest
+  owner: default/guests
   type: service
 
   parameters:
