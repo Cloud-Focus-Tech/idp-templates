@@ -2,8 +2,8 @@ apiVersion: scaffolder.backstage.io/v1beta3
 kind: Template
 metadata:
   name: hello-world
-  title: Hello World
-  description: A test template
+  title: Hello World 1
+  description: A test template 1
 spec:
   owner: guests
   type: service
