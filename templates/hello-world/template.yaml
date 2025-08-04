@@ -5,7 +5,7 @@ metadata:
   title: Hello World
   description: A test template
 spec:
-  owner: you@example.com
+  owner: guests
   type: service
   parameters:
     - title: Provide info
