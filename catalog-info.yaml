@@ -5,5 +5,4 @@ metadata:
   description: All Backstage software templates for the company
 spec:
   targets:
-  - ./templates/*/template.yaml
-  type: template
+    - https://raw.githubusercontent.com/Cloud-Focus-Tech/idp-templates/refs/heads/master/templates/hello-world/template.yaml
