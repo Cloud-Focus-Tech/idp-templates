@@ -1,14 +1,14 @@
 apiVersion: scaffolder.backstage.io/v1beta3
 kind: Template
 metadata:
-  name: Dotnet API Template
-  title: Dotnet API Template
-  description: A template for creating a Dotnet API based on the provided template
+  name: dotnetapi
+  title: DotnetAPI
+  description: A template for creating a Dotnet API
 spec:
   owner: guests
-  type: service
+  type: API
   parameters:
-    - title: Project Name
+    - title: Provide info
       required:
         - name
       properties:
