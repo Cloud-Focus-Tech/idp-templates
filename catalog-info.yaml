@@ -6,3 +6,4 @@ metadata:
 spec:
   targets:
     - templates/hello-world/template.yaml
+    - templates/dotnet-api/template.yaml
