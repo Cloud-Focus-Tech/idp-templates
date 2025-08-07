@@ -26,7 +26,7 @@ spec:
     - title: "Source Info"
       required:
       properties:
-        projectname:
+        generaterepo:
           type: boolean
           title: 'Create Repo'
           description: 'Do you want to create a new repository for this project?'
