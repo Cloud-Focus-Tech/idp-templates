@@ -17,18 +17,21 @@ spec:
           type: string
           title: 'Project Name'
           description: 'The name of the project. Must not contain spaces or special characters.'
+        
         projectdomain:
           type: string
           title: 'Business Domain'
           description: 'Business domain of the project, used for naming conventions.'
           default: 'claims'
+        
         repoUrl:
-          title: Repository Location
+          title: 'Repository Location'
           type: string
           ui:field: RepoUrlPicker
           ui:options:
             allowedHosts:
               - github.com
+
     - title: "Source Info"
       required:
         - owner 
