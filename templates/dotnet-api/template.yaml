@@ -19,13 +19,22 @@ spec:
           description: 'The name of the project. Must not contain spaces or special characters.'
         projectdomain:
           type: string
-          title: 'Project Domain'
+          title: 'Business Domain'
           description: 'Business domain of the project, used for naming conventions.'
           default: 'claims'
 
     - title: "Source Info"
       required:
+        - owner 
       properties:
+        owner:
+          title: Owner
+          type: string
+          description: Owner of the component
+          ui:field: OwnerPicker
+          ui:options:
+            catalogFilter:
+              kind: Group
         generaterepo:
           type: boolean
           title: 'Create Repo'
