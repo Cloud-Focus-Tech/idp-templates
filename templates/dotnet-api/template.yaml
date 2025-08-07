@@ -14,11 +14,9 @@ spec:
       properties:
         name:
           type: string
-          title: "Project Name"
+          title: 'Project Name'
           pattern: '^[a-zA-Z0-9]+$'
-          description: "The name of the project. Must not contain spaces or special characters."
-
-
+          description: 'The name of the project. Must not contain spaces or special characters.'
 
   steps:
     - id: fetch
