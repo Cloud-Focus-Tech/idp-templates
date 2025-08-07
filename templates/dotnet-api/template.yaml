@@ -8,7 +8,7 @@ spec:
   owner: guests
   type: API
   parameters:
-    - title: "Project Info (No spaces)"
+    - title: "Project Info"
       required:
         - projectname
         - projectdomain
@@ -22,6 +22,14 @@ spec:
           title: 'Project Domain'
           description: 'Business domain of the project, used for naming conventions.'
           default: 'claims'
+
+    - title: "Source Info"
+      required:
+      properties:
+        projectname:
+          type: boolean
+          title: 'Create Repo'
+          description: 'Do you want to create a new repository for this project?'
 
   steps:
     - id: fetch
