@@ -8,13 +8,22 @@ spec:
   owner: guests
   type: API
   parameters:
-    - title: Provide info
+    - title: "Project Name (No spaces)"
       required:
         - name
       properties:
         name:
           type: string
-          description: Project name
+          title: "Project Name"
+          pattern: '^[a-zA-Z0-9]+$'
+          description: "The name of the project. Must not contain spaces or special characters."
+        name:
+          type: string
+          title:  "Project Domain"
+          description:  "Business domain of the project, used for naming conventions.""
+          default: "claims"
+
+
   steps:
     - id: fetch
       name: Fetch template
