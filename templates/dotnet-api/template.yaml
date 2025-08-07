@@ -16,7 +16,6 @@ spec:
         projectname:
           type: string
           title: 'Project Name'
-          pattern: '^[a-zA-Z0-9]+$'
           description: 'The name of the project. Must not contain spaces or special characters.'
         projectdomain:
           type: string
@@ -31,4 +30,4 @@ spec:
       input:
         url: ./skeleton
         values:
-          name: ${{ parameters.name }}       
+          name: ${{ parameters.projectname }}       
