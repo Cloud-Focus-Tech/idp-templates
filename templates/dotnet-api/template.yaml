@@ -22,7 +22,13 @@ spec:
           title: 'Business Domain'
           description: 'Business domain of the project, used for naming conventions.'
           default: 'claims'
-
+        repoUrl:
+          title: Repository Location
+          type: string
+          ui:field: RepoUrlPicker
+          ui:options:
+            allowedHosts:
+              - github.com
     - title: "Source Info"
       required:
         - owner 
