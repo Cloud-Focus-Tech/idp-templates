@@ -10,13 +10,19 @@ spec:
   parameters:
     - title: "Project Info (No spaces)"
       required:
-        - name
+        - projectname
+        - projectdomain
       properties:
-        name:
+        projectname:
           type: string
           title: 'Project Name'
           pattern: '^[a-zA-Z0-9]+$'
           description: 'The name of the project. Must not contain spaces or special characters.'
+        projectdomain:
+          type: string
+          title: 'Project Domain'
+          description: 'Business domain of the project, used for naming conventions.'
+          default: 'claims'
 
   steps:
     - id: fetch
